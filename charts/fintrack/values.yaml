@@ -19,6 +19,7 @@ frontend:
     targetPort: 80
     nodePort: 30080
 
+
 grafana:
   envFromSecret: "grafana-smtp-secret"
   grafana.ini:
