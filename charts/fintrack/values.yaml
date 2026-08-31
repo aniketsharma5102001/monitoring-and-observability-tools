@@ -18,3 +18,14 @@ frontend:
     port: 80
     targetPort: 80
     nodePort: 30080
+
+grafana:
+  envFromSecret: "grafana-smtp-secret"
+  grafana.ini:
+    smtp:
+      enabled: true
+      host: "${GF_SMTP_HOST}"
+      user: "${GF_SMTP_USER}"
+      password: "${GF_SMTP_PASSWORD}"
+      from_address: "${GF_SMTP_FROM_ADDRESS}"
+      from_name: "${GF_SMTP_FROM_NAME}"
