@@ -31,7 +31,6 @@ The core objective of this architecture is to minimize **Mean Time to Resolution
 * **Alerting Engine:** Grafana Unified Alerting (PromQL-based) routed via SMTP.
 
 ---
-
 ## ⚙️ System Topology
 
 ```mermaid
